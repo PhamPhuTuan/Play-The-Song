@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vn" dir="ltr">
+
+<head>
+    <!-- Favicon- -->
+    <link rel="shortcut icon" type="image/jpg" href="Images/music-logo.png" />
+    <meta charset="utf-8" lang="vn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-The-Song</title>
+    <!-- linked css file -->
+    <link rel="stylesheet" type="text/css" href="home-style.css">
+
+    <!--- linked responsive css file --->
+    <!--- Desktop first approach was used --->
+    <link rel="stylesheet" type="text/css" href="page1-responsive.css">
+    <!--for icon-->
+    <link rel="stylesheet" href="../fonts\themify-icons\themify-icons.css">
+    <!-- for using font awesome  -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--- HEADER NAVIGATION BAR --->
+    <nav class="navigation-bar">
+        <!--- this div contains the icon and heading of the page ---->
+        <div class="title-combo">
+            <div class="website-logo">
+                <img src="https://cdn0.iconfinder.com/data/icons/internet-2020/1080/Applemusicandroid-512.png">
+            </div>
+            <div class="website-name">
+                <h1>Demo Music</h1>
+                <h4>Music Studio</h4>
+            </div>
+        </div>
+
+        <!-- Favourites--->
+        <div class="favs">
+            <a href=#Pricing>
+                <h4>Pricing</h4>
+            </a>
+        </div>
+
+        <!---  Search Bar --->
+        <div class="search-bar">
+            <div id="magnify-icon">
+                <!-- magnifying glass- search icon -->
+                <i class="fas fa-search search-ico" style="margin-bottom: 10px"></i>
+            </div>
+            <input type="text" name="search" placeholder="Search....">
+            <div id="mic-icon">
+                <!-- mic icon -->
+                <i class="fas fa-microphone mic-ico" style="margin-bottom: 10px"></i>
+            </div>
+        </div>
+
+        <!--        Notification bell     --->
+        <div class="notification-bell">
+            <img src="https://www.pngrepo.com/png/140341/512/bell.png">
+        </div>
+
+        <!--- Profile picture -->
+        <div class="profile-picture">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5iROb1TgJ_rcl-6r-68v1yjtID052zxSkw&usqp=CAU">
+        </div>
+        </div>
+    </nav>
+    <!--end NAV BAR-->
+    </div>
+
+    <!--MAIN-->
+    <main class="main--1">
+        <!--section left-->
+        <div class="section-1 aside">
+            <!--carousel-->
+            <div class="outer-carousel">
+                <div class="carousel">
+                    <img src="../Images/Carousel/1.png" alt="">
+                    <img src="../Images/Carousel/2.jpg" alt="">
+                    <img src="../Images/Carousel/3.jpg" alt="">
+                </div>
+            </div>
+
+            <!--latest release-->
+            <div class="latest-release">
+                <h2 style="width: 100%">Latest Release</h2>
+                <div class="lastest-release-container">
+                    <a href="#bottom-click" onclick="play_the_song(11)" class="latest-release-content">
+                        <div style="position: relative;">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="card">
+                                <img src="../Images/img/Before You Go.jpg" alt="">
+                                <div class="song-description">
+                                    <h3>Before You</h3>
+                                    <p>Aug 11, 2019</p>
+                                </div>
+                                <div class="options">
+                                    <h3>...</h3>
+                                    <p>4:42</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#bottom-click" onclick="play_the_song(12)" class="latest-release-content">
+                        <div style="position: relative;">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="card">
+                                <img src="../Images/img/Someone You Loved.jpg" alt="">
+                                <div class="song-description">
+                                    <h3>Someone You Loved</h3>
+                                    <p>Aug 20, 2020</p>
+                                </div>
+                                <div class="options">
+                                    <h3>...</h3>
+                                    <p>3:54</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#bottom-click" onclick="play_the_song(15)" class="latest-release-content">
+                        <div style="position: relative;">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="card">
+                                <img src="../Images/img/Ái Nộ.jpg" alt="">
+                                <div class="song-description">
+                                    <h3>Ái Nộ</h3>
+                                    <p>July 25, 2019</p>
+                                </div>
+                                <div class="options">
+                                    <h3>...</h3>
+                                    <p>3:34</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#bottom-click" onclick="play_the_song(13)" class="latest-release-content">
+                        <div style="position: relative;">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="card">
+                                <img src="../Images/img/Đợi.jpg" alt="">
+                                <div class="song-description">
+                                    <h3>Đợi</h3>
+                                    <p>June 11, 2019</p>
+                                </div>
+                                <div class="options">
+                                    <h3>...</h3>
+                                    <p>5:02</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="popular-artists">
+                <h2 style="margin-bottom: 10px;">Popular Artists</h2>
+                <div class="popular-artist-content">
+                    <a href="#Justin_Bieber">
+                        <div>
+                            <img src="..\Images\popular artists\justine.jpg" alt="">
+                            <p>Justin Bieber</p>
+                        </div>
+                    </a>
+
+                    <a href="#Bruno_Mars">
+                        <div>
+                            <img src="..\Images\popular artists\bruno.jpg" alt="">
+                            <p>Bruno Mars</p>
+                        </div>
+                    </a>
+                    <a href="#Billie_Eilish">
+                        <div>
+                            <img src="..\Images\popular artists\billie.jpg" alt="">
+                            <p>Billie Eilish</p>
+                        </div>
+                    </a>
+                    <a href="..\Trang_Playlist\Playlist_music.html">
+                        <div>
+                            <img src="..\Images\music-logo.png" alt="">
+                            <p>TeamDevMusic</p>
+                        </div>
+                    </a>
+                    <a href="#Ed_Sheeran">
+                        <div>
+                            <img src="../Images/popular artists/ed sheeran.jpg" alt="">
+                            <p>Ed Sheeran</p>
+                        </div>
+                    </a>
+                    <a href="#Drake">
+                        <div>
+                            <img src="../Images/popular artists/drake.jpg" alt="">
+                            <p>Drake</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!--music theme1-->
+            <div class="music-themes">
+                <div class="stations">
+                    <div id="div1">
+                        <div id="div2">
+                            <div id="div3">
+                                <img src="https://img.icons8.com/plumpy/90/000000/radio-waves.png" />
+                                <p>STATIONS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end station-->
+                <div class="theme-main">
+                    <div class="theme-content">
+                        <img src="../Images/music themes/rock.jpg" alt="">
+                        <p>Rock</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="../Images/music themes/love.jpg" alt="">
+                        <p>Love</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="../Images/music themes/chill.jpg" alt="">
+                        <p>Chill</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="../Images/music themes/retro.jpg" alt="">
+                        <p>Retro</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="../Images/music themes/pop.jpg" alt="">
+                        <p>Pop</p>
+                    </div>
+                    <div class="theme-content">
+                        <img src="../Images/music themes/workout.jpg" alt="">
+                        <p>Workout</p>
+                    </div>
+                </div>
+                <!--end main-music theme-->
+            </div>
+            <!--music theme2 3 pics-->
+            <div class="music-themes-2">
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <h2>Party</h2>
+                    </div>
+                </div>
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <h2>Electronic</h2>
+                    </div>
+                </div>
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <h2>Road Trip</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- latest english-->
+            <div class="language">
+                <h2>Latest English</h2>
+                <div class="language-content">
+                    <div>
+                        <img src="../Images/music themes/retro.jpg" alt="">
+                        <p>WTF Do I Know</p>
+                        <p>Aug 11, 2020</p>
+                    </div>
+                    <div>
+                        <img src="../Images/music themes/chill.jpg" alt="">
+                        <p>Lonely</p>
+                        <p>July 11, 2020</p>
+                    </div>
+                    <div>
+                        <img src="../Images/music themes/love.jpg" alt="">
+                        <p>All We Got</p>
+                        <p>June 21, 2020</p>
+                    </div>
+                    <div>
+                        <img src="../Images/music-themes-2/2.jpg" alt="">
+                        <p>Therefore I am</p>
+                        <p>Nov 22, 2020</p>
+                    </div>
+                    <div>
+                        <img src="../Images/music-themes-2/3.jpg" alt="">
+                        <p>Adelaide</p>
+                        <p>Oct 7, 2020</p>
+                    </div>
+                    <div>
+                        <img src="../Images/music-themes-2/1.jpg" alt="">
+                        <p>Holy</p>
+                        <p>Feb 25, 2020</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--section right-->
+        <div class="section-2 aside">
+            <div class="heading js-click-queue">
+                <h3 class="js-click-open-playlist">Recommend Songs</h3>
+                <h4 class="js-click-close-playlist"><a href="#queue-option-box">Show<i class="js-icon"></i></a></h4>
+            </div>
+            <!-- id="queue-option-box" -->
+            <div class="playlist-content js-open-playlist open">
+                <a onclick="play_the_song(0)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>01</div>
+                        <div><img src="../Images/img/img1.jpg" alt=""></div>
+                        <div>Something Just Like This
+                            <p>The Chainsmokers</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+
+                <a onclick="play_the_song(1)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>02</div>
+                        <div><img src="../Images/img/img2.jpg" alt=""></div>
+                        <div>On My Mind
+                            <p>Don Diablo</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+                <a onclick="play_the_song(2)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>03</div>
+                        <div><img src="../Images/img/img3.jpg" alt=""></div>
+                        <div>Save A Little Love
+                            <p>Don Diablo</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+                <a onclick="play_the_song(3)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>04</div>
+                        <div><img src="../Images/img/img4.jpg" alt=""></div>
+                        <div>Children Of A Miracle
+                            <p>Don Diablo & Marnik</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+                <a onclick="play_the_song(4)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>05</div>
+                        <div><img src="../Images/img/img5.jpg" alt=""></div>
+                        <div>Ocean Drive
+                            <p>Duke Dumont</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+                <a onclick="play_the_song(5)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>06</div>
+                        <div><img src="../Images/img/img6.jpg" alt=""></div>
+                        <div>Xa Kỷ Niệm
+                            <p>Phan Mạnh Quỳnh</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+                <a onclick="play_the_song(6)" href="#bottom-click" class="playlist-item">
+                    <div class="left-content">
+                        <div>07</div>
+                        <div><img src="../Images/img/img7.jpg" alt=""></div>
+                        <div>Ánh Trăng Tình Ái
+                            <p>Dương Edward</p>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <!--end MAIN-->
+        <!-- footer -->
+        <div class="bottom" id="bottom-click">
+            <!--part 1-->
+            <div class="active-song-description">
+                <div id="song-image">
+                    <img id="bottom_img">
+                </div>
+                <div class="song-desc">
+                    <div id="bottom_name"></div>
+                    <div id="bottom_auth"></div>
+                </div>
+                <div class="heart-and-ban-icon">
+                    <span><i class="far fa-heart"></i></span>
+                    <span style="margin-left: 10px;"><i class="fas fa-ban"></i></span>
+                </div>
+            </div>
+            <!--part 2-->
+            <div class="player">
+                <div class="controls">
+                    <div><i class="fas fa-random"></i></div>
+                    <div onclick="previous_song()"><i class="fas fa-step-backward" aria-hidden="true"></i></div>
+                    <div id="bottom_play"><i class="fa fa-play" onclick="justplay()" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-step-forward" onclick="next_song()" aria-hidden="true"></i></div>
+                    <div><i class="fas fa-undo-alt"></i></div>
+                </div>
+                <div id="slider">
+                    <div class="time">-:-</div>
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange" oninput="change_duration(0)">
+                    </div>
+                    <div class="time">-:-</div>
+                </div>
+            </div>
+
+            <!--part 3-->
+            <div class="extras">
+                <div><i class="fas fa-bars"></i></div>
+                <div><i class="fas fa-desktop"></i></div>
+                <div><i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()"></i></div>
+                <div style="width: 40%">
+                    <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="90" class="slider" oninput="volume_change(0)" id="myRangeVolume">
+                    </div>
+                </div>
+                <div><i class="fas fa-expand-alt" onclick="open_play_song()"></i></div>
+            </div>
+        </div>
+        <!-- end footer -->
+        </div>
+    </main>
+    <div class="play_the_song close-element">
+        <div id="bg__all"></div>
+        <div class="header">
+            <button class="close_all" onclick="stop_the_song()">
+            X
+            </button>
+        </div>
+        <div class="wrap">
+            <div class="main">
+                <!-- Music Icon -->
+                <p id="logo"><i class="fa fa-music"></i> Music Player</p>
+
+                <!--- left part --->
+                <div class="left">
+                    <!--- song img --->
+                    <img id="track_image">
+                    <div class="volume">
+                        <p id="volume_show">90</p>
+                        <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+                        <input type="range" min="0" max="100" value="90" oninput="volume_change(1)" id="volume">
+                    </div>
+
+                </div>
+
+                <!--- right part --->
+                <div class="right">
+                    <!--- song title & artist name --->
+                    <div class="song_detail">
+                        <p class="title">title.mp3</p>
+                        <p id="artist">Artist name</p>
+                    </div>
+
+                    <!--- middle part --->
+                    <div class="middle">
+                        <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                        <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                        <button onclick="showLyric()" class="lyric__btn" style="color: #fff;">Lyric</button>
+                    </div>
+
+                    <!--- song duration part --->
+                    <div class="duration">
+                        <input type="range" min="0" max="100" value="0" id="duration_slider" oninput="change_duration(1)">
+                        <button id="auto" onclick="autoplay_switch()">Auto &nbsp;<i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="lyric">
+            <div class="lyric__overlay"></div>
+            <div class="lyric__body">
+                <div class="lyric__header">
+                    <p class="title_of_lyric">title.mp3</p>
+                    <button onclick="hideLyric()" class="close">X</button>
+                </div>
+                <div class="body_content">
+                    <h1 class="content_lyric">hihi</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--- Add javascript file --->
+<script src="main.js"></script>
+<!-- let openBtn -đoccumeny .d sioidio i  ddm alot of many subnav vi gate tion -->
+
+<script>
+    let openBtn = document.querySelector('.js-click-open-playlist')
+    let modal = document.querySelector('.js-open-playlist')
+    let closeBtn = document.querySelector('.js-click-close-playlist')
+    let icon = document.querySelector('.js-icon')
+    let queue = document.querySelector('.js-click-queue')
+    var flag = 0
+
+    //xóa class open fas fa-chevron-down
+    function hidePlaylistContent() {
+        modal.classList.remove('open')
+        icon.classList.remove('fa-chevron-down')
+        icon.classList.add('fa-chevron-up')
+        flag = flag + 1
+    }
+
+    //thêm class open
+    function showPlaylistContent() {
+        modal.classList.add('open')
+        icon.classList.remove('fa-chevron-up')
+        icon.classList.add('fa-chevron-down')
+        flag = 0
+    }
+
+    function check() {
+        if (flag % 2 === 1) {
+            showPlaylistContent()
+        } else {
+            hidePlaylistContent()
+        }
+    }
+
+    queue.addEventListener('click', check)
+</script>
+
+</html>
+
+</html>
